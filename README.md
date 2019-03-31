@@ -41,8 +41,11 @@ OMDB_ID=your_ombd_id
 ```
 
 ## Pictures
-
+- ex: spotify-this-song
 ![Alt text](images/spotify-this-song.png?raw=true "spotify-this-song")
+- ex: concert-this
 ![Alt text](images/concert-this.png?raw=true "concert-this")
-![Alt text](images/moive-this.png?raw=true "movie-this")
+- ex: movie-this
+![Alt text](images/movie-this.png?raw=true "movie-this")
+- ex: do-what-it-says
 ![Alt text](images/do-what-it-says.png?raw=true "do-what-it-says")
