@@ -4,12 +4,12 @@ LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for mov
 
 ## Instructions
 
-- $ node liri <search> <term>
+- $ node liri '<search>' '<term>'
 
 ### Search:
-- spotify-this-song <song>
-- concert-this <artist/band>
-- movie-this <movie>
+- spotify-this-song '<song>'
+- concert-this '<artist/band>'
+- movie-this '<movie>'
 - do-what-it-says
 
 ## Api information
