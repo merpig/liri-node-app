@@ -1,10 +1,34 @@
 var axios = require("axios");
+var moment = require('moment');
 var fs = require("fs");
 
 var ConcertThis = function() {
 
     this.search = function(query) {
-        console.log(query);
+        var URL = "rest.bandsintown.comhttps://rest.bandsintown.com/artists/";
+        URL += query;
+        URL += "/events?app_id=codingbootcamp";
+        axios.get(URL).then(function(response) {
+            var jsonData = response.data;
+            //var artist = query;
+            if(!jsonData[0].venue) {
+                console.log('| Nothing returned for "' + query + '". ');
+                console.log('| Check if you have entered your search correctly.');
+                console.log(' -----------------------------------------------');
+                return;
+            }
+            for(var i = 0; i < jsonData.length; i++){
+                var eventDate = jsonData[i].datetime;
+                var formattedDate = moment(eventDate).format('MM/DD/YYYY');
+                var dateText = "| Date: \t" + formattedDate;
+                var venue = "| Venue: \t" + jsonData[i].venue.name;
+                var loc = "| Location: \t" + jsonData[i].venue.city + ", ";
+                loc += jsonData[i].venue.country;
+                console.log(venue + "\n" + loc + "\n" + dateText);
+                console.log(' -----------------------------------------------');
+            }
+        });
+        //console.log(query);
     }
 }
 

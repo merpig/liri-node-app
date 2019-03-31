@@ -20,7 +20,7 @@ if (search === 'concert-this') {
     concert_this.search(term);
 } else if(search === 'spotify-this-song'){
     if(!term) term = "The Sign";
-    console.log('\n\n -----------------------------------------------');
+    console.log('\n -----------------------------------------------');
     console.log('|\t~Searching for "' + term + '" in Spotify~\t|');
     console.log(' -----------------------------------------------');
     spotify.search({ type: 'track', query: term })
@@ -48,5 +48,5 @@ if (search === 'concert-this') {
     if(!term) term = "Mr. Nobody";
     console.log('~Searching for "' + term + '" in OMDB~');
 } else if(search === 'do-what-it-says'){
-    
+
 }
