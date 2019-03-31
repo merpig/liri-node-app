@@ -1,13 +1,15 @@
 var axios = require("axios");
 var moment = require('moment');
 var fs = require("fs");
+var keys = require("./keys.js");
+var concertId = keys.concert;
 
 var ConcertThis = function() {
 
     this.search = function(query) {
-        var URL = "rest.bandsintown.comhttps://rest.bandsintown.com/artists/";
+        var URL = "https://rest.bandsintown.com/artists/";
         URL += query;
-        URL += "/events?app_id=codingbootcamp";
+        URL += "/events?app_id=" + concertId;
         axios.get(URL).then(function(response) {
             var jsonData = response.data;
             //var artist = query;

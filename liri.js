@@ -7,6 +7,9 @@ var spotify = new Spotify(keys.spotify);
 var ConcertThis = require('./concert-this');
 var concert_this = new ConcertThis();
 
+var MovieThis = require('./movie-this');
+var movie_this = new MovieThis();
+
 // Grab search command line argument
 var search = process.argv[2];
 // Joining the remaining arguments since the query may contain spaces
@@ -14,14 +17,14 @@ var term = process.argv.slice(3).join(' ');
 
 if (search === 'concert-this') {
     if(!term) return;
-    console.log('\n\n -----------------------------------------------');
-    console.log('|  ~Searching for "' + term + '" from Bands in Town~\t|');
+    console.log('\n -----------------------------------------------');
+    console.log('\t~Searching for "' + term + '" from Bands in Town~');
     console.log(' -----------------------------------------------');
     concert_this.search(term);
 } else if(search === 'spotify-this-song'){
     if(!term) term = "The Sign";
     console.log('\n -----------------------------------------------');
-    console.log('|\t~Searching for "' + term + '" in Spotify~\t|');
+    console.log('\t~Searching for "' + term + '" in Spotify~');
     console.log(' -----------------------------------------------');
     spotify.search({ type: 'track', query: term })
     .then(function(response) {
@@ -46,7 +49,11 @@ if (search === 'concert-this') {
     });
 } else if(search === 'movie-this'){
     if(!term) term = "Mr. Nobody";
-    console.log('~Searching for "' + term + '" in OMDB~');
+    console.log('\n -----------------------------------------------');
+    console.log('\t~Searching for "' + term + '" in OMDB~');
+    console.log(' -----------------------------------------------');
+    movie_this.search(term);
+
 } else if(search === 'do-what-it-says'){
 
 }
