@@ -10,10 +10,10 @@
 `$ node liri 'search' 'term'`
 
 ### Search:
-`spotify-this-song 'song'`
-`concert-this 'artist/band'`
-`movie-this 'movie'`
-`do-what-it-says`
+- `spotify-this-song 'song'`
+- `concert-this 'artist/band'`
+- `movie-this 'movie'`
+- `do-what-it-says`
 
 ## Api information
 - [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api)
