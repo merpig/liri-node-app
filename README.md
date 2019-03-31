@@ -42,10 +42,10 @@ OMDB_ID=your_ombd_id
 
 ## Pictures
 - ex: spotify-this-song
-![Alt text](images/spotify-this-song.png?raw=true  | width=100)
+<img src="images/spotify-this-song.png" alt="alt text" width="100px">
 - ex: concert-this
-![Alt text](images/concert-this.png?raw=true  | width=100)
+![](images/concert-this.png | width=100)
 - ex: movie-this
-![Alt text](images/movie-this.png?raw=true  | width=100)
+![](images/movie-this.png?raw=true  | width=100)
 - ex: do-what-it-says
-![Alt text](images/do-what-it-says.png?raw=true  | width=100)
+![](images/do-what-it-says.png?raw=true  | width=100)
