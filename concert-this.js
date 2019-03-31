@@ -12,8 +12,7 @@ var ConcertThis = function() {
         URL += "/events?app_id=" + concertId;
         axios.get(URL).then(function(response) {
             var jsonData = response.data;
-            //var artist = query;
-            if(!jsonData[0].venue) {
+            if(response.data === '\n{warn=Not found}\n') {
                 console.log('Search not found!');
                 console.log(' -----------------------------------------------');
                 return;
