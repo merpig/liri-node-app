@@ -1,4 +1,8 @@
 # liri-node-app
+- Sasha Peters
+- Vanderbilt coding academy
+- March 31, 2019
+
 LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies
 
 
