@@ -14,8 +14,7 @@ var ConcertThis = function() {
             var jsonData = response.data;
             //var artist = query;
             if(!jsonData[0].venue) {
-                console.log('| Nothing returned for "' + query + '". ');
-                console.log('| Check if you have entered your search correctly.');
+                console.log('Search not found!');
                 console.log(' -----------------------------------------------');
                 return;
             }

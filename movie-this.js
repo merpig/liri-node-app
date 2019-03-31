@@ -11,6 +11,12 @@ var MovieThis = function() {
         URL += "t="+query;
         
         axios.get(URL).then(function(response) {
+            if(response.data.Response === 'False'){
+                console.log(response.data.Error);
+                console.log(' -----------------------------------------------');
+                return;
+            }
+            
             var jsonData = response.data;
             var title = "| Title: \t " + jsonData.Title + "\n";
             var released = "| Released: \t " + jsonData.Released + "\n";

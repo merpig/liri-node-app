@@ -32,6 +32,11 @@ function handleSearches(search,term){
         console.log(' -----------------------------------------------');
         spotify.search({ type: 'track', query: term })
         .then(function(response) {
+        if(!response.tracks.items.length){
+            console.log("Song not found!");
+            console.log(' -----------------------------------------------');
+            return;
+        }
         var artists = response.tracks.items[0].album.artists;
         var songName = response.tracks.items[0].name;
         var songLink = response.tracks.items[0].external_urls.spotify;
