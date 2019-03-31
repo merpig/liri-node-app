@@ -1,6 +1,6 @@
 # liri-node-app
 - Sasha Peters
-https://bootcamps.vanderbilt.edu/
+- [Vanderbilt Coding BootCamp](https://bootcamps.vanderbilt.edu/)
 
 - LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies`
 
@@ -16,14 +16,14 @@ https://bootcamps.vanderbilt.edu/
 `do-what-it-says`
 
 ## Api information
-`node-spotify-api`
-`OMDB API`
-`Bands In Town API`
+- [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api)
+- [OMDB API](http://www.omdbapi.com/)
+- [Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api)
 
 ## Additional Resources
-`Axios`
-`Moment`
-`DotEnv`
+- [Axios](https://www.npmjs.com/package/axios)
+- [Moment](https://www.npmjs.com/package/moment)
+- [DotEnv](https://www.npmjs.com/package/dotenv)
 
 ## .env information
 ### To use this create a .env in the root directory of liri-node-app
