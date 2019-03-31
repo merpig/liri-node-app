@@ -15,13 +15,13 @@ var MovieThis = function() {
             var title = "| Title: \t " + jsonData.Title + "\n";
             var released = "| Released: \t " + jsonData.Released + "\n";
             var imdbRating = "| IMDB Rating: \t " + jsonData.imdbRating + "\n";
-            var rotTomRating = "| RT Rating: \t " + jsonData.Ratings[1].Value;
+            var rotTomRating="| RT Rating: \t "+jsonData.Ratings[1].Value+"\n";
             var country = "| Country: \t " + jsonData.Country + "\n";
             var lang = "| Language: \t " + jsonData.Language + "\n";
             var plot = "| Plot: \t " + jsonData.Plot + "\n";
             var actors = "| Actors: \t " + jsonData.Actors;
-            console.log(title + released + imdbRating + rotTomRating);
-            console.log(country + lang + plot + actors);
+            console.log(title + released + imdbRating + rotTomRating +
+                        country + lang + plot + actors);
             console.log(' -----------------------------------------------');
         });
     }
