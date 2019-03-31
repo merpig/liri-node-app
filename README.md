@@ -1,30 +1,29 @@
 # liri-node-app
 - Sasha Peters
-- Vanderbilt coding academy
-- March 31, 2019
+https://bootcamps.vanderbilt.edu/
 
-LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies
+- LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies`
 
 
 ## Instructions
 
-- $ node liri 'search' 'term'
+`$ node liri 'search' 'term'`
 
 ### Search:
-- spotify-this-song 'song'
-- concert-this 'artist/band'
-- movie-this 'movie'
-- do-what-it-says
+`spotify-this-song 'song'`
+`concert-this 'artist/band'`
+`movie-this 'movie'`
+`do-what-it-says`
 
 ## Api information
-- node-spotify-api
-- OMDB API
-- Bands In Town API
+`node-spotify-api`
+`OMDB API`
+`Bands In Town API`
 
 ## Additional Resources
-- Axios
-- Moment
-- DotEnv
+`Axios`
+`Moment`
+`DotEnv`
 
 ## .env information
 ### To use this create a .env in the root directory of liri-node-app
