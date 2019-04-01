@@ -2,7 +2,7 @@
 - Sasha Peters
 - [Vanderbilt Coding BootCamp](https://bootcamps.vanderbilt.edu/)
 
-- LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies`
+- LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies
 
 
 ## Instructions
